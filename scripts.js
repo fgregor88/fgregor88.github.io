@@ -19,7 +19,7 @@ let odgovori = [
     ["Hostlu", "Airbnbju", "Kampu"],
     ["Morje", "Gozd", "Mestne ulice"],
     ["Starodavno arhitekturo", "Fimska prizorišča", "Stare vasi"],
-    ["Močarico", "Ovčetino", "Jajca s feferoni"],
+    ["Mečarico", "Ovčetino", "Jajca s feferoni"],
     ["Konjak", "Jabolčni cider", "Sadno vino"],
 ]
 
@@ -94,3 +94,4 @@ function updatePageContent() {
 updatePageContent();
 
 window.onload = initializeCounters;
+window.onreload = resetCounters;
