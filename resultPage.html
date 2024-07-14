@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="scripts.js"></script>
+    <title>Dynamic Page</title>
 </head>
 <body>
-    <h1>result page</h1>
-    <div class="counters">
-        <div>Counter 1: <span id="counter1">0</span></div>
-        <div>Counter 2: <span id="counter2">0</span></div>
-        <div>Counter 3: <span id="counter3">0</span></div>
-    </div>
+<div class="title" id="page-title">Preveč vprašanje? Ok izberi najljubšo destinacijo sam!</div>
+<div class="container">
+    <div class="orange-div" onclick="incrementCounter(1)"><img src="slike\\result1.jpg" alt="Image 1"></div>
+    <div class="orange-div" onclick="incrementCounter(2)"><img src="slike\\result2.webp" alt="Image 2"></div>
+    <div class="orange-div" onclick="incrementCounter(3)"><img src="slike\\result3.jpg" alt="Image 3"></div>
+    <div class="odgovor">Velikonočni otok</div>
+    <div class="odgovor">Nova Zelandija</div>
+    <div class="odgovor">Andaluzija</div>
+</div>
+
+
 </body>
+</html>

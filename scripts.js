@@ -35,17 +35,13 @@ function initializeCounters() {
 
 // Reset counters on page reload
 function resetCounters() {
-    for (let i = 1; i <= 3; i++) {
-        localStorage.setItem(`counter${i}`, 0);
-        document.getElementById(`counter${i}`).innerText = 0;
-    }
-}
+    localStorage.setItem(`counter1`, 0);
+    localStorage.setItem(`counter2`, 0);
+    localStorage.setItem(`counter3`, 0);
 
-// Check if the page was reloaded
-if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-    resetCounters();
-} else {
-    initializeCounters();
+    document.getElementById(`counter1`).innerText = 0;
+    document.getElementById(`counter2`).innerText = 0;
+    document.getElementById(`counter3`).innerText = 0;
 }
 
 // Increment counter and update the page content
@@ -90,8 +86,15 @@ function updatePageContent() {
     });
 }
 
+resetCounters();
+
 // Initialize the first page
 updatePageContent();
 
-window.onload = initializeCounters;
-window.onreload = resetCounters;
+//window.onload = initializeCounters;
+//window.onreload = resetCounters;
+
+function zacni() {
+    window.location.href = "questions.html";
+    resetCounters();
+}
